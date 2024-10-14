@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="BcD4RhHZVvV8yt7PyKw97j-9TlEP3_IVFE2eo9Mr3PI" />
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
@@ -20,13 +20,12 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Arjan.<span></span></a></div>
+            <div class="logo"><a href=" https://drive.usercontent.google.com/download?id=1P9H95TKvfTSfgMh4xAwGvT5r7RiayHG1&export=download&authuser=0">Arjan.<span></span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Computer Project</a></li>
-                <li><a href="#skills" class="menu-btn">Will drop soon...</a></li>
-                <li><a href="#teams" class="menu-btn">Team members</a></li>
+                <li><a href="#projects" class="menu-btn">Computer Project</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -43,6 +42,8 @@
                 <div class="text-2">Arjan Chaudhary</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
             </div>
+               
+          </div>
         </div>
     </section>
 
@@ -51,99 +52,154 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="Screenshot 2023-08-25 225444.png" alt="">
+                    <img src="ar.png.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Arjan and I'm a <span class="typing-2"></span></div>
+                    <p><h2>Hi, I'm Arjan Chaudhary,<br></h2><BR> a 15-year-old web developer and Python Programmer and student from Biratnagar, Nepal. I'm currently in grade 10 at Adarsha Secondary School, balancing my studies with my passion for coding and technology.</p>
+                    <p>As a young developer, I'm constantly learning and expanding my skills, particularly in mobile app development. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
+                    
                 </div>
             </div>
         </div>
     </section>
 
     
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">Computer Projects</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class=""></i>
-                        <div class="text"><a href="https://github.com/turdboi42069/h" target="_blank"> Online Shopping Website</a></div>
-                        <p></p>
+   
+
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="website">Websites</button>
+                <button class="filter-btn" data-filter="webapp">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="website">
+                    <img src="stack.png" alt="Online Shopping Website" class="project-image" loading="lazy">
+                    <div class="project-info">
+                        <h3>Online Shopping Website</h3>
+                        <p>A fully functional e-commerce platform .</p>
+                        <a href="https://github.com/turdboi42069/h" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class=""></i>
-                        <div class="text"><a href="https://turdboi42069.github.io/prj28hr/" target="_blank" > Valentine's day Project</a></div>
-                        <p></p>
+                <div class="project-card" data-category="website">
+                    <img src="pr.png" alt="Valentine's Day Project" class="project-image" loading="lazy">
+                    <div class="project-info">
+                        <h3>Valentine's Day Project</h3>
+                        <p>A creative web application celebrating love and friendship.</p>
+                        <a href="https://turdboi42069.github.io/proposal-site/" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
                     </div>
                 </div>
-               </div>
+                <div class="project-card" data-category="mobile">
+                    <img src="tictactoe.png" alt="Mobile App" class="project-image" loading="lazy">
+                    <div class="project-info">
+                        <h3>Tic Tac Toe</h3>
+                        <p>A simple and redesigned fun mobile game.</p>
+                        <a href="https://drive.usercontent.google.com/download?id=1P9H95TKvfTSfgMh4xAwGvT5r7RiayHG1&export=download&authuser=0" class="btn"target="_blank">Download</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="webapp">
+                    <img src="chromatch.png" alt="Chromatch" class="project-image" loading="lazy">
+                    <div class="project-info">
+                        <h3>Chromatch</h3>
+                        <p>A web-based color matching game to test your perception skills.</p>
+                        <a href="https://turdboi42069.github.io/web-game2/" class="btn" target="_blank">Play Game</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="webapp">
+                    <img src="emoji.png" alt="Emoji Evolution" class="project-image" loading="lazy">
+                    <div class="project-info">
+                        <h3>Emoji Evolution</h3>
+                        <p>An interactive fun web game showcasing the evolution of emojis.</p>
+                        <a href="https://turdboi42069.github.io/web-game1/" class="btn" target="_blank">Play Game</a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div id="projects-3d-model"></div>
     </section>
 
-    
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">Will drop soon...</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">
+
+
+
+
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+           <div class ="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 83%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <div class="skill-name">MySQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon"></i>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js skill-icon"></i>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react skill-icon"></i>
+                    <div class="skill-name">React.js</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush skill-icon"></i>
+                    <div class="skill-name">Logo Designing</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-django skill-icon"></i>
+                    <div class="skill-name">Django</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 72%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills-3d-model"></div>
     </section>
+
+
+
+
+
+    
+   
 
   
-    <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">My team</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="CRIS.png" alt="photo naayeko aawastha ma 1 dail garnu hos">
-                        <div class="text">Cristiano Ronaldo</div>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="KDB.png" alt="photo naayeko aawastha ma 1 dail garnu hos">
-                        <div class="text">Kevin De Brune</div>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="COLD.png" alt="photo naayeko aawastha ma 1 dail garnu hos">
-                        <div class="text">Cole Palmer</div>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="RODRYGO.png" alt="photo naayeko aawastha ma 1 dail garnu hos">
-                        <div class="text">Rodrygo Goes</div>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="LEO.png" alt="photo naayeko aawastha ma 1 dail garnu hos">
-                        <div class="text">Leo Messi</div>
-                        </div>
-                        </div>
-                        <div class="card">
-                            <div class="box">
-                                <img src="Petrovic.png" alt="photo naayeko aawastha ma 1 dail garnu hos">
-                                <div class="text">Đorđe Petrović
-                                </div>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">

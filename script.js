@@ -32,14 +32,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing", {
-        strings: ["Student", "Micro-Developer", "Learner", "Micro-Poet"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    var typed = new Typed(".typing-2", {
-        strings: ["Student", "Learning Web Developement", "interested in Computer & Programming"],
+        strings: ["Python Programmer", "Web-Developer", "Student", "Learner"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -67,3 +60,37 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// Project filter
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        projectCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
