@@ -11,6 +11,12 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
+
+
+
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -73,7 +79,7 @@ section .title::after{
     font-size: 20px;
     color: rgb(233, 88, 88);
     padding: 0 5px;
-    background: #fff;
+    background: #e4e0e0;
     transform: translateX(-50%);
 }
 
@@ -113,7 +119,7 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color: #beb9b9;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -128,7 +134,7 @@ section .title::after{
 
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: #ccc5c5;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -142,7 +148,7 @@ section .title::after{
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+    color: #afadad;
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -167,7 +173,7 @@ section .title::after{
     display: flex;
     background: url("n.svg") no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: #c9c4c4;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -294,7 +300,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
-    border-color: #fff;
+    border-color: #bbb9b9;
 }
 .owl-dots{
     text-align: center;
@@ -394,7 +400,7 @@ section .title::after{
   align-items: center;
 }
 .right form .button-area button{
-  color: #fff;
+  color: #d8d7d7;
   display: block;
   width: 160px!important;
   height: 45px;
@@ -633,7 +639,7 @@ footer span a:hover{
 
 .filter-btn.active, .filter-btn:hover {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #c5c1c1;
 }
 
 
@@ -651,9 +657,9 @@ footer span a:hover{
     --primary-color: #8a2be2;
     --secondary-color: #00ffff;
     --text-color: #333;
-    --bg-color: #fff;
-    --section-bg-1: #f4f4f4;
-    --section-bg-2: #e8e8e8;
+    --bg-color: #c7c3c3;
+    --section-bg-1: #9b9696;
+    --section-bg-2: #ccbfbf;
     --transition: all 0.3s ease;
 }
 
@@ -683,7 +689,7 @@ body.dark-theme {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(216, 208, 208, 0.8);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -788,7 +794,7 @@ h1 {
     display: inline-block;
     padding: 12px 24px;
     background-color: var(--primary-color);
-    color: #fff;
+    color: #c2bebe;
     text-decoration: none;
     border-radius: 5px;
     transition: var(--transition);
@@ -849,7 +855,7 @@ h2 {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: 15px;
     padding: 20px;
-    color: #fff;
+    color: #e2dcdc;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -878,7 +884,7 @@ h2 {
 
 .skill-progress {
     height: 100%;
-    background-color: #fff;
+    background-color: #b6b2b2;
     transition: width 1s ease-in-out;
 }
 
@@ -943,7 +949,7 @@ h2 {
 
 .filter-btn.active, .filter-btn:hover {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #b9b2b2;
 }
 
 .gallery-modal {
@@ -963,7 +969,7 @@ h2 {
     bottom: 20px;
     right: 20px;
     background-color: var(--primary-color);
-    color: #fff;
+    color: #8f8c8c;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -978,18 +984,16 @@ h2 {
 #scroll-to-top:hover {
     background-color: var(--secondary-color);
 }
-
-.hero-3d-model,
-#about-3d-model,
-#skills-3d-model,
-#projects-3d-model,
-#contact-3d-model {
-    position: absolute;
+#smoke_canvas {
+    position: fixed;
     top: 0;
-    right: 0;
-    width: 50%;
+    left: 0;
+    width: 100%;
     height: 100%;
-    z-index: -1;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.5;
+    mix-blend-mode: screen;
 }
 
 @media (max-width: 768px) {
